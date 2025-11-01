@@ -19,7 +19,13 @@
             padding: 40px 0;
         }
         main {
-            padding: 20px;
+            text-align: center; /* centers all text and inline content inside main */
+        }
+        .about-container {
+            max-width: 33%;       /* restrict width to ~middle 1/3 of page */
+            margin: 0 auto;       /* horizontally center the container */
+            text-align: center;   /* center the text inside */
+            word-wrap: break-word; /* ensures long words break to next line if needed */
         }
         img {
             border-radius: 50%;
@@ -46,16 +52,27 @@
     </header>
 
     <main>
-        <h2>About Me</h2>
-        <p>
-            I am a Master's student studying EECS at UC Berkeley. I am very passionate about Machine Learning and Computer Vision, and I aim to make a meaningful change to the world in the near future.
-        </p>
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>
+                I am a Master's student studying EECS at UC Berkeley. I am very passionate about Machine Learning and Computer Vision, 
+                and I aim to make a meaningful change to the world in the near future.
+            </p>
+        </div>
 
         <h2>Projects</h2>
         <ul style="list-style: none; padding: 0;">
             <li><a href="https://joshua-sun-compsci.github.io/cs280a/" target="_blank">Computer Vision</a></li>
-            <!-- <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li> -->
+            <li><a href="https://github.com/Angelinaaaaaaaaaaaa/Trip_Planner_Agent" target="_blank">Trip Planner Agent</a></li>
+            <li><a href="https://github.com/Joshua-Sun-CompSci/academic-style-llms" target="_blank">Academic Style LLM</a></li>
+            <li><a href="https://github.com/LimJH2002/BlackjackAI" target="_blank">Black Jack AI</a></li>
+            <li><a href="https://github.com/Joshua-Sun-CompSci/capture_the_flag" target="_blank">Capture The Flag</a></li>
+            <li><a href="https://github.com/Joshua-Sun-CompSci/PVZ" target="_blank">Plants Versus Zombies</a></li>
+        </ul>
+        
+        <h2>Work samples</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li><a href="https://github.com/Joshua-Sun-CompSci/Database-Synchronization" target="_blank">Database Synchronization</a></li>
         </ul>
 
         <h2>Contact</h2>
